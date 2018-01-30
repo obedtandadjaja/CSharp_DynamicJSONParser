@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Utility {
 
-	public static JSONParserObject ParseJSONString(string json, char? endingChar) {
+    public static JSONParserObject ParseJSONString(string json, char? endingChar) {
         json = json.Trim();
         if(json.Length > 0) {
             
