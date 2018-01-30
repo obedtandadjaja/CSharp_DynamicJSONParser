@@ -70,7 +70,7 @@ public class Utility {
             // when next object is a number
             } else if (char.IsDigit(json[0])) {
                 int indexOfComma = json.IndexOf(',');
-                int num = int.Parse(json.Substring(0, indexOfComma + 1));
+                double num = double.Parse(json.Substring(0, indexOfComma + 1));
                 json = json.Substring(indexOfComma + 1);
                 return new JSONParserObject(json, num);
 
