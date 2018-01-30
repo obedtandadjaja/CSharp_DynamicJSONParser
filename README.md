@@ -19,7 +19,7 @@ using(var streamReader = new StreamReader(response.GetResponseStream()))
 {
     // returns JSON string
     string result = streamReader.ReadToEnd();
-    JSONParserObject obj = ParseJSONString(result, null);
+    JSONParserObject obj = ParseJSONString(result, null); // <-- parsing
     
     // define JSON structure on usage
     Dictionary<string, object> response = obj.currentObject as Dictionary<string, object>;
